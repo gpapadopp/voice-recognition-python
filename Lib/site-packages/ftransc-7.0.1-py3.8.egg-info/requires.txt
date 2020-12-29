@@ -1,0 +1,5 @@
+pafy
+mutagen
+plumbum
+blessings
+youtube-dl
