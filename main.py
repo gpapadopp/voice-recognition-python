@@ -2,24 +2,12 @@
 # E-mail: georgepap2001@gmail.com
 
 # import library
-# https://realpython.com/python-speech-recognition/
 import speech_recognition as sr
 import os
-
-# Convert .mp3 to .wav
-# https://stackoverflow.com/questions/32073278/python-convert-mp3-to-wav-with-pydub
 import subprocess
-
-# Get .wav file duration
-# https://stackoverflow.com/questions/7833807/get-wav-file-length-or-duration
 import wave
 import contextlib
-
-# Split .wav file
-# https://stackoverflow.com/questions/37999150/how-to-split-a-wav-file-into-multiple-wav-files
 from pydub import AudioSegment
-
-# Remove folders
 import shutil
 
 # Check if the audio is .wav file type
@@ -237,5 +225,5 @@ def speech_to_text_main(audio_file_src, language):
         # Transcript is empty
         print('Could not recognise speech. File is too large.')
 
-# break_wav_file('E:\\European School Radio\\Audio to Text\\575711.wav')
-speech_to_text_main('E:\\European School Radio\\Audio to Text\\5757.mp3', 'el-GR')
+
+speech_to_text_main('audio_file.mp3', 'el-GR')
